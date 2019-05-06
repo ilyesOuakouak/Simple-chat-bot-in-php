@@ -5,8 +5,8 @@
 
     insertMessages();
     insertMessages2();
-
 ?>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -69,14 +69,9 @@
 
                             </div>
 
-
-
-
                             <?php
                         }
                         ?>
-
-
 
                     </div>
 
@@ -110,8 +105,7 @@
                 </div>
 
                 <?php
-                foreach (displayMessages2() as $message)
-                {
+                foreach (displayMessages2() as $message) {
                     ?>
                     <div class="chat2botSendMessage">
                         <p><?=$message['user_message'];?></p>
@@ -153,8 +147,7 @@
         <form method="POST">
             <button name="clearChat1" type="submit" id="reset1" class="btn btn-outline-danger">Reset</button>
             <?php
-                if(isset($_POST['clearChat1']))
-                {
+                if (isset($_POST['clearChat1'])) {
                     clearDatabase1();
                 }
             ?>
@@ -185,13 +178,10 @@
             width: 100%;
         }
 
-
         .middle {
             display: table-cell;
             vertical-align: middle;
         }
-
-
 
         .chat-send-message {
 
@@ -273,30 +263,7 @@
         i:hover {
             color: #BC4123;
         }
-        /*
-        .chat-send-message .circle {
-            z-index: 2;
-            width: 40px;
-            height: 40px;
-            -webkit-border-radius: 50% ;
-            -moz-border-radius: 50%;
-            border-radius: 50%;
-            align-self: flex-end;
-            position: relative;
-            left: -55px;
-            background-color: #ffffff;
-        }
-        .chat-send-message .square {
-            width: 30px;
-            height: 15px;
-            background-color: tomato;
-            align-self: flex-end;
-            position: relative;
-            left: -75px;
 
-
-        }
-        */
 
         /*Customise the scrollBar in CSS*/
         /* width */
